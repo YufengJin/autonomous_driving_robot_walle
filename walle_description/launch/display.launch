@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="model" default="$(find walle_description)/urdf/walle.xacro"/>
+	<arg default="false" name="gui"/>
+
+	<param command="$(find xacro)/xacro.py $(arg model) --inorder" name="robot_description"/>
+	<param name="use_gui" value="$(arg gui)"/>
+	
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+	<node name="rviz" pkg="rviz" type="rviz"/>
+	<!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/urdf.rviz" /-->
+</launch>

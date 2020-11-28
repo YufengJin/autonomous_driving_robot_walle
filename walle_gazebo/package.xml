@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>walle_gazebo</name>
+  <version>0.1.0</version>
+  <description>walle in Gazebo.</description>
+
+  <maintainer email="jyf931118@gmail.com">Yufeng Jin</maintainer>
+  <maintainer email="dahuang1996@gmail.com">Da Huang</maintainer>
+
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>gazebo_ros</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+</package>
