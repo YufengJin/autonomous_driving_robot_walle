@@ -1,5 +1,10 @@
-# autonomous_driving_robot_walle
-A completely manual mobile robot for sign recognition and slam, and wraps bunches of other algorithms, such as A* algorithm
+# Autonomous_driving_robot_walle
+In order to implement some of the current mainstream image recognition algorithms, and reinforcement learning algorithms, we built Walle, which is driven by a raspberry pi 3B+ and controlled by four wheel differentials for motion. It contains a monocular camera, and two ultrasonic sensors. Because of the computational limitations of Raspberry and latency. We chose to use IP/TCP protocols for bi-directional data transfer between the laptop and the Raspberry over LAN. The image recognition and neural networks that require more com puting power are performed on the laptop, while the motion control of the car and the camera angle shift are controlled by the Raspberry.
+Subtasks:
+- Lane recognition of German highways 
+- Traffic Sign Recognition based on MobileNet SSD
+- Depth Estimation using monocular camera
+
 
 ## Robot components requirement
 - 2 servomotor e.g SG90
