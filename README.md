@@ -5,6 +5,7 @@ Subtasks:
 - Traffic Sign Recognition based on MobileNet SSD
 - Depth Estimation using monocular camera
 
+ROS Control Demo: https://www.youtube.com/watch?v=Z1_V9yEkl9s
 
 ## Robot components requirement
 - 2 servomotor e.g SG90
